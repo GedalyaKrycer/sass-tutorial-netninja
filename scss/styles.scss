@@ -8,7 +8,9 @@
     background: $deepBlue;
     ul {
         width: 100%;
+        @include clearFix;
     }
+  
 
     li {
        float: left;
@@ -20,16 +22,11 @@
         padding: 16px;
         display: block;
         text-align: center;
+        &:hover {
+            background: #333;
+        }
     }
-    // End Main Nav
 
-
-}
-
-#main-nav ul:after {
-    content: "";
-    display: block;
-    clear: both;
 }
 
 section h1 {
